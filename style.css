@@ -47,11 +47,21 @@ body {
     text-shadow: 0 0 20px #ff005b;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
+    animation-name: flicker;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
-.neon:hover {
-    text-shadow: 0 0 50px white;
+@keyframes flicker {
+    0% {opacity: 0; text-shadow: none;}
+    33% {opacity: 1; text-shadow: 0 0 20px white;}
+    /* 66% {opacity: 0; text-shadow: none;} */
+    100% {opacity: 1; text-shadow: 0 0 20px #ff005b;}
 }
+
+/* .neon:hover {
+    text-shadow: 0 0 50px white;
+} */
 
 .container2 {
     height: 33%;
@@ -68,3 +78,18 @@ body {
     font-family: 'Source Code Pro', monospace;
     color: #ff005b;
 }
+
+.code {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
