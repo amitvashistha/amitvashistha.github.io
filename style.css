@@ -3,14 +3,35 @@
 
 body {
     
-    height: 96vh;
-    border: 5px solid;
-    /* border-color: #ff005b; */
-    box-shadow: 0 0 20px #ff005b;
+    height: 97vh;
+    background-color: black;
+    /* border: 5px solid;
+    border-color: #ff005b;
+    box-shadow: 0 0 20px #ff005b; */
+    /* background-image: url("smoke2.jpg");
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+}
+
+.bgImg {
     background-image: url("smoke2.jpg");
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    height: 100%;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* z-index: -1; */
+}
+
+.container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top:0;
+    z-index: 2;
+    margin: 0;
 }
 
 .container1 {
