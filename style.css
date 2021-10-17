@@ -7,7 +7,7 @@ body {
     border: 5px solid;
     /* border-color: #ff005b; */
     box-shadow: 0 0 20px #ff005b;
-    background-image: url("smoke1.jfif");
+    background-image: url("smoke2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +54,7 @@ body {
 }
 
 .container2 {
-    height: 50%;
+    height: 33%;
     /* background-image: url("smoke1.jfif");
     background-position: center;
     background-repeat: no-repeat;
