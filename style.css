@@ -47,16 +47,23 @@ body {
     text-shadow: 0 0 20px #ff005b;
     text-align: center;
     font-family: 'Quicksand', sans-serif;
-    animation-name: flicker;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation: flicker 2s linear infinite;
 }
 
 @keyframes flicker {
-    0% {opacity: 0; text-shadow: none;}
-    33% {opacity: 1; text-shadow: 0 0 20px white;}
+    0% {opacity: 0.1; text-shadow: 0 0 20px #ff005b;}
+    2% {opacity: 1; text-shadow: 0 0 20px #ff005b;}
+    /* 8% {opacity: 0.1; text-shadow: 0 0 20px #ff005b;}
+    9% {opacity: 1; text-shadow: 0 0 20px #ff005b;} */
+    12% {opacity: 0.1; text-shadow: 0 0 20px #ff005b;}
+    20% {opacity: 1; text-shadow: 0 0 20px #ff005b;}
+    25% {opacity: 0.3; text-shadow: 0 0 20px #ff005b;}
+    30% {opacity: 1; text-shadow: 0 0 20px #ff005b;}
+    70% {opacity: 0.7; text-shadow: 0 0 20px #ff005b;}
+    72% {opacity: 0.2; text-shadow: 0 0 20px #ff005b;}
+    77% {opacity: 0.9; text-shadow: 0 0 20px #ff005b;}
     /* 66% {opacity: 0; text-shadow: none;} */
-    100% {opacity: 1; text-shadow: 0 0 20px #ff005b;}
+    100% {opacity: 0.9; text-shadow: 0 0 20px #ff005b;}
 }
 
 /* .neon:hover {
@@ -81,10 +88,11 @@ body {
 
 .code {
     overflow: hidden;
+    border-right: .15em solid #ff005b;
     white-space: nowrap;
     margin: 0 auto;
     animation: 
-        typing 3.5s steps(40, end),
+        typing 2.5s steps(40, end),
         blink-caret .75s step-end infinite;
 }
 
@@ -92,4 +100,9 @@ body {
 @keyframes typing {
     from { width: 0 }
     to { width: 100% }
-  }
+}
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ff005b; }
+}
