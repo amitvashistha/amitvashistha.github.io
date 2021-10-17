@@ -44,26 +44,77 @@ body {
     margin: 0;
     color: white;
     font-size: 10vw;
-    text-shadow: 0 0 20px #ff005b;
+    text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #ff005b,
+      0 0 80px #ff005b,
+      0 0 90px #ff005b,
+      0 0 100px #ff005b,
+      0 0 150px #ff005b;
+    /* text-shadow: 0 0 20px #ff005b; */
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     animation: flicker 2s linear infinite;
 }
 
 @keyframes flicker {
-    0% {opacity: 0.1; text-shadow: 0 0 20px #ff005b;}
-    2% {opacity: 1; text-shadow: 0 0 20px #ff005b;}
+    0% {opacity: 0.1; text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #ff005b,
+        0 0 40px #ff005b;}
+    2% {opacity: 1; text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #ff005b,
+        0 0 40px #ff005b;}
     /* 8% {opacity: 0.1; text-shadow: 0 0 20px #ff005b;}
     9% {opacity: 1; text-shadow: 0 0 20px #ff005b;} */
-    12% {opacity: 0.1; text-shadow: 0 0 20px #ff005b;}
-    20% {opacity: 1; text-shadow: 0 0 20px #ff005b;}
-    25% {opacity: 0.3; text-shadow: 0 0 20px #ff005b;}
-    30% {opacity: 1; text-shadow: 0 0 20px #ff005b;}
-    70% {opacity: 0.7; text-shadow: 0 0 20px #ff005b;}
-    72% {opacity: 0.2; text-shadow: 0 0 20px #ff005b;}
-    77% {opacity: 0.9; text-shadow: 0 0 20px #ff005b;}
+    12% {opacity: 0.1; text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #ff005b,
+        0 0 40px #ff005b;}
+    20% {opacity: 1; text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #ff005b,
+        0 0 40px #ff005b;}
+    25% {opacity: 0.3; text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #ff005b,
+        0 0 40px #ff005b;}
+    30% {opacity: 1; text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #ff005b,
+        0 0 40px #ff005b;}
+    70% {opacity: 0.7; text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #ff005b,
+        0 0 40px #ff005b;}
+    72% {opacity: 0.2; text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #ff005b,
+        0 0 40px #ff005b;}
+    77% {opacity: 0.9; text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #ff005b,
+        0 0 80px #ff005b;}
     /* 66% {opacity: 0; text-shadow: none;} */
-    100% {opacity: 0.9; text-shadow: 0 0 20px #ff005b;}
+    100% {opacity: 0.9; text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #ff005b,
+        0 0 80px #ff005b;}
 }
 
 /* .neon:hover {
